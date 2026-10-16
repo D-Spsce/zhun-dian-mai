@@ -11,9 +11,7 @@
 
 </div>
 
-<p align="center">
-  <img src="assets/demo.gif" width="900" alt="准点麦演示">
-</p>
+![准点麦演示](assets/demo.gif)
 
 ---
 

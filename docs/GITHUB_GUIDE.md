@@ -132,12 +132,10 @@ open-source
 
 ### 首页 README 首屏优化
 
-若已有动图，把 README 第一段调整为：
+若已有动图，把 README 第一段调整为（**用标准 Markdown 图片语法，勿用 HTML `<img>` 标签**——部分渲染器不解析 HTML 块，会把标签当代码显示）：
 
 ```markdown
-<p align="center">
-  <img src="assets/demo.gif" width="900" alt="准点麦演示">
-</p>
+![准点麦演示](assets/demo.gif)
 ```
 
 ---
