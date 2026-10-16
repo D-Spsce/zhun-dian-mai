@@ -135,8 +135,10 @@ open-source
 若已有动图，把 README 第一段调整为（**用标准 Markdown 图片语法，勿用 HTML `<img>` 标签**——部分渲染器不解析 HTML 块，会把标签当代码显示）：
 
 ```markdown
-![准点麦演示](assets/demo.gif)
+![准点麦演示](https://raw.githubusercontent.com/D-Spsce/zhun-dian-mai/main/assets/demo.gif)
 ```
+
+用 raw 绝对 URL 而不是相对路径 `assets/demo.gif`：GitHub 内两者都行，但外部平台（赛事页、Skill 市场）拉取 README 单独渲染时无法解析相对路径，会显示裂图。
 
 ---
 

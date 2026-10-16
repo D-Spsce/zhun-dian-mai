@@ -11,7 +11,7 @@
 
 </div>
 
-![准点麦演示](assets/demo.gif)
+![准点麦演示](https://raw.githubusercontent.com/D-Spsce/zhun-dian-mai/main/assets/demo.gif)
 
 ---
 
