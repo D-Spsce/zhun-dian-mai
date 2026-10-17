@@ -7,7 +7,7 @@
 > 通勤早晨的早餐决策助手。基于麦当劳 MCP，把「几点到店」变成「吃什么」的直接答案。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![MCP](https://img.shields.io/badge/MCP-24%20tools-blue.svg)](MCP_INTEGRATION.md)
+[![MCP](https://img.shields.io/badge/MCP-33%20tools-blue.svg)](MCP_INTEGRATION.md)
 
 </div>
 
@@ -179,14 +179,20 @@ claude mcp add --transport http mcd-mcp https://mcp.mcd.cn \
 
 ```
 zhun-dian-mai/
-├── SKILL.md                 Skill 主体
+├── README.md                项目介绍、安装方法、使用示例、目标用户
+├── SKILL.md                 Skill 主体流程
+├── CONTEST_DECLARATION.md   参赛声明（官方原文件，未作改动）
+├── MCP_INTEGRATION.md       MCP 集成说明（Server / 工具 / 调用流程 / 业务价值）
+├── mcp-config.example.json  脱敏配置示例（仅环境变量占位符）
+├── workbuddy.md             WorkBuddy 开发对话上下文
 ├── references/
 │   ├── tools.md             MCP 工具清单与字段陷阱
 │   ├── scenarios.md         六模式规则与权重表
 │   └── personas.md          早八人格定义
-├── MCP_INTEGRATION.md       MCP 集成说明
-├── mcp-config.example.json  脱敏配置示例
-└── LICENSE
+├── assets/
+│   └── demo.gif             17 秒演示动图
+├── docs/                    协作文档（推广物料、开发备忘）
+└── LICENSE                  MIT
 ```
 
 ## 安全与合规

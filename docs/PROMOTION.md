@@ -51,9 +51,9 @@
 1. 金额单位不统一——只有 `calculate-price` 返回「分」，其他工具返回的已是「元」
 2. 到店场景 `beCode` 必须为 null，`takeWayCode` 必传，且只能取自算价返回的列表
 
-基于麦当劳 MCP 的 24 个工具，用了 8 个。MIT 协议，欢迎拍砖。
+基于麦当劳 MCP 的 33 个工具，用了 8 个。MIT 协议，欢迎拍砖。
 
-项目：https://github.com/你的用户名/zhun-dian-mai
+项目：https://github.com/D-Spsce/zhun-dian-mai
 
 （如果有做交通/出行场景的朋友，欢迎聊聊 NFC 触发那部分，我这块还没想透怎么合规落地）
 ```

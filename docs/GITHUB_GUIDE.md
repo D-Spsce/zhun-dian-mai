@@ -26,7 +26,7 @@
 在项目目录执行：
 
 ```bash
-cd C:/Users/DongWei/WorkBuddy/2026-10-16-10-58-55/zhun-dian-mai
+cd <你的项目目录>/zhun-dian-mai
 
 git init
 git add .

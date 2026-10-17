@@ -8,7 +8,7 @@
 |---|---|
 | 端点 | `https://mcp.mcd.cn` |
 | 传输 | Streamable HTTP |
-| 工具总数 | 24 |
+| 工具总数 | 33（本 Skill 实际调用 8 个，见 MCP_INTEGRATION.md） |
 | 限流 | 每 Token 每分钟 600 次，超限返回 429 |
 | 鉴权 | `Authorization: Bearer <MCD_MCP_TOKEN>` |
 | 覆盖范围 | 中国大陆（不含港澳台） |

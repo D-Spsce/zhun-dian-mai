@@ -9,8 +9,7 @@
 | 提供方 | 麦当劳中国 |
 | 端点 | `https://mcp.mcd.cn` |
 | 传输协议 | Streamable HTTP |
-| MCP 协议版本上限 | 2025-06-18 |
-| 工具总数 | 24 |
+| 工具总数 | 33（截至官方 README 版本日志 v1.0.9，2026-09-10） |
 | 限流 | 每 Token 每分钟 600 次 |
 | 覆盖范围 | 中国大陆（不含港澳台） |
 
@@ -31,7 +30,15 @@
 
 ### 未使用的工具
 
-麦乐送配送相关（`delivery-*`）、积分商城（`mall-*`）、`campaign-calendar`、`query-order` 等工具与早餐通勤场景无关，本 Skill 刻意不调用，以保持链路最短、失败面最小。
+官方 33 个工具中，本 Skill 只调用上表 8 个，其余 25 个刻意不调用，以保持链路最短、失败面最小：
+
+| 未使用分组 | 工具 | 不调用的原因 |
+|---|---|---|
+| 麦乐送配送 | `delivery-query-addresses`、`delivery-create-address`、`delivery-query-stores` | 早餐通勤场景为到店自取，不涉及外送 |
+| 积分商城 | `mall-points-products`、`mall-product-detail`、`mall-create-order`、`mall-order-list`、`mall-order-detail` | 与点餐决策无关 |
+| 积分抽奖 | `query-lottery-info`、`draw-lottery`、`query-my-prizes` | 消耗积分，非早餐决策必需 |
+| 主题活动 | `query-party-city`、`query-party-store`、`query-partystore-date`、`query-partystore-session`、`party-order-create`、`query-meal-assistance` | 派对/品鉴会/团餐场景，非个人通勤早餐 |
+| 订单与账户查询 | `cancel-order`、`query-order`、`order-list`、`query-my-coupons`、`query-my-account`、`campaign-calendar`、`now-time-info`、`auto-bind-coupons` | 属于下单后管理或辅助查询，不参与选餐决策链；`auto-bind-coupons` 为写操作，仅在用户明确要求领券时才考虑 |
 
 ## 调用流程
 

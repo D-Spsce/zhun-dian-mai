@@ -128,10 +128,12 @@ WorkBuddy 查明：**仅 `calculate-price` 返回的价格单位是「分」，�
 配置连接器时，WorkBuddy 首次写入 `~/.workbuddy/mcp.json`（系统提示中指定的路径），但 WorkBuddy 界面显示「暂无 MCP」。
 
 WorkBuddy 主动排查后发现真实路径为：
+
 ```
-C:\Users\DongWei\.workbuddy\connectors\default\mcp.json
+<用户主目录>\.workbuddy\connectors\default\mcp.json
 ```
-该文件包含 144 个官方连接器，使用 `streamableHttp` 类型命名规范。修正后配置生效，原文件已备份。
+
+该文件包含约 144 个官方连接器，使用 `streamableHttp` 类型命名规范。修正后配置生效，原文件已备份。
 
 ### 发现 4：网络安全诊断
 
@@ -213,6 +215,6 @@ zhun-dian-mai/
 
 **一句话定位**：出闸到取餐，一次决定。
 
-**技术栈**：Markdown（Skill）+ 麦当劳 MCP Server（24 个工具）
+**技术栈**：Markdown（Skill）+ 麦当劳 MCP Server（33 个工具，本 Skill 调用其中 8 个）
 
 **License**：MIT
